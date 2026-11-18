@@ -7,6 +7,8 @@ triângulo vermelho) e não volta mais para a tela normal.
 **Funcionou de verdade:** em 18/11/2026 uma central presa no recovery voltou ao Android normal
 seguindo exatamente este guia (fotos abaixo são desse conserto).
 
+> 💚 **Este guia e a imagem são de graça.** Se te ajudou, considere [apoiar com um Pix](#apoie-este-projeto).
+
 > **Projeto não oficial**, feito por dono para dono, sem vínculo com Fiat, Stellantis ou Multilaser.
 > O software pertence aos fabricantes. Use por sua conta e risco. Se a sua central ainda está na
 > garantia, procure a concessionária primeiro.
@@ -25,6 +27,7 @@ seguindo exatamente este guia (fotos abaixo são desse conserto).
 8. [Conferência do arquivo (MD5)](#8-conferência-do-arquivo-md5)
 9. [Como a imagem foi feita](#9-como-a-imagem-foi-feita)
 10. [Detalhes técnicos](#10-detalhes-técnicos-para-quem-quer-ir-além)
+11. [Apoie este projeto](#apoie-este-projeto)
 
 ---
 
@@ -314,3 +317,25 @@ binário `/sbin/recovery`:
 
 - A central bloqueia instalação de APK de terceiros (lista fixa de pacotes permitidos no
   `PackageManagerService`); é por isso que ela mostra "O aplicativo não foi instalado".
+
+---
+
+## Apoie este projeto
+
+Achou interessante ou este guia salvou a sua central? Tudo aqui foi feito e publicado **de graça**:
+horas descobrindo o formato do recovery, clonando uma central igual e testando o conserto.
+
+Se quiser ajudar com qualquer valor, **Pix**:
+
+<img src="fotos/pix-qrcode.png" alt="QR code Pix para apoiar o projeto" width="260">
+
+**Chave Pix (aleatória):** `88f688c6-5d31-4bbb-b969-b8dcc42aa73a`
+
+**Pix copia e cola:**
+
+```
+00020126580014BR.GOV.BCB.PIX013688f688c6-5d31-4bbb-b969-b8dcc42aa73a5204000053039865802BR5919DOACAO ARGO CENTRAL6006BRASIL62070503***6304E501
+```
+
+No app do banco: **Pix > Ler QR code** ou **Pix copia e cola**, escolha o valor e confirme.
+O app mostra o nome do titular da chave antes de você confirmar. Obrigado! 🙏
