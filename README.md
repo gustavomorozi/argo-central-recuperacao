@@ -65,7 +65,15 @@ Se a central ainda ligasse, a versão aparece em **Config > Sobre / Informaçõe
 ### Confira a etiqueta (atrás da central)
 
 Se ela já não liga, tire a central do painel e veja a etiqueta branca de trás
-(número de série borrado nesta foto):
+(número de série borrado nesta foto).
+
+**Como tirar a central do painel:** vídeo
+["como tirar a central multimídia do fiat argo"](https://www.youtube.com/watch?v=ZVi6xamriGQ),
+do canal **Dicas da Hora som e acessórios** (crédito ao autor; o vídeo não é deste projeto):
+
+[![Vídeo: como tirar a central multimídia do Fiat Argo](https://img.youtube.com/vi/ZVi6xamriGQ/hqdefault.jpg)](https://www.youtube.com/watch?v=ZVi6xamriGQ)
+
+Foto da etiqueta:
 
 ![Etiqueta da central Multilaser FIAT Módulo X6H 9"](fotos/01-etiqueta.jpg)
 
@@ -116,6 +124,8 @@ pela opção **Update system**, lendo um arquivo do cartão de memória. Este re
 - Uns **20 minutos** com o carro parado e ligado (ou com a bateria boa).
 
 Não precisa abrir a central nem tirar do carro, se ela estiver ligando no recovery.
+Só é preciso tirar do painel para conferir a etiqueta, se você não souber a versão do software
+(veja o [vídeo de como tirar](https://www.youtube.com/watch?v=ZVi6xamriGQ), do canal Dicas da Hora som e acessórios).
 
 ---
 
