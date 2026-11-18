@@ -322,10 +322,23 @@ binário `/sbin/recovery`:
 
 ## Apoie este projeto
 
-Achou interessante ou este guia salvou a sua central? Tudo aqui foi feito e publicado **de graça**:
-horas descobrindo o formato do recovery, clonando uma central igual e testando o conserto.
+### Por que isto é público e de graça
 
-Se quiser ajudar com qualquer valor, **Pix**:
+Quando a minha central travou, fui atrás de conserto:
+
+- Nas **concessionárias**, queriam cobrar **R$ 500 só pelo pré-diagnóstico**, sem garantia nenhuma de
+  que teriam a solução.
+- Em **lojas de som**, o conserto saía por volta de **R$ 1.000**.
+- A imagem do sistema não existia em lugar nenhum da internet, e nem a Multilaser nem as concessionárias
+  tinham o arquivo.
+
+Depois de conseguir clonar uma central igual e consertar a minha, achei que isso **deveria ser público**,
+para ninguém mais ter que pagar caro (ou trocar a central) por um problema que se resolve com um cartão
+de memória e 20 minutos.
+
+Achou interessante ou este guia salvou a sua central? Foram horas descobrindo o formato do recovery,
+clonando uma central igual e testando o conserto, tudo publicado **de graça**. Quem quiser ajudar,
+ajuda no Pix, com qualquer valor:
 
 <img src="fotos/pix-qrcode.png" alt="QR code Pix para apoiar o projeto" width="260">
 
