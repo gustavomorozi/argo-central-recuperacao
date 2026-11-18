@@ -188,6 +188,14 @@ pela opção **Update system**, lendo um arquivo do cartão de memória colocado
    - **Não** renomeie (tem que ser exatamente `system.img.ext4`).
 6. **Ejete** o cartão com segurança antes de tirar.
 
+### Como entrar no recovery
+
+- Se o Android da central estiver estragado, ela **já abre sozinha** no recovery ao ligar.
+- Se ela fica **presa na logo** ou o Android abre com erro (por exemplo, "o launcher parou"): com a
+  central ligando (na logo), **aperte e solte o botão de reset** que fica na **parte de baixo da central,
+  do lado direito**. Não precisa segurar. Ela reinicia e abre o menu "Android system recovery".
+  (Dica de membros do grupo Argo Clube no Facebook.)
+
 ### Parte B: na central
 
 1. **Tire a central do painel** para chegar no **módulo** atrás da tela
