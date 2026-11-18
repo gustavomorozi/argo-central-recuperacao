@@ -34,6 +34,14 @@ seguindo exatamente este guia (fotos abaixo são desse conserto).
 **Mopar** (peça FCA `52128799`). Por dentro é um Android 4.2.2 com processador Autochips AC8317
 (projeto Roadrover).
 
+### Como ela é no painel
+
+Tela de 9" "flutuante" no alto do painel do Argo, com os botões **PWR**, **HOME** e **BACK** (e o furo
+do **MIC**) na lateral esquerda. Nesta foto ela está justamente presa no recovery, o problema que este
+guia resolve:
+
+![Central multimídia 9" do Fiat Argo no painel, presa no recovery](fotos/00-central-no-painel.jpg)
+
 ### Como ela é na tela
 
 Tela inicial com relógio grande e a barra de baixo com **Rádio, Telefone, BT Música, Apps, Músicas,
