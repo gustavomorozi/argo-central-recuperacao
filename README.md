@@ -7,11 +7,42 @@ triângulo vermelho) e não volta mais para a tela normal.
 **Funcionou de verdade:** em 18/11/2026 uma central presa no recovery voltou ao Android normal
 seguindo exatamente este guia (fotos abaixo são desse conserto).
 
-> 💚 **Este guia e a imagem são de graça.** Se te ajudou, considere [apoiar com um Pix](#apoie-este-projeto).
-
 > **Projeto não oficial**, feito por dono para dono, sem vínculo com Fiat, Stellantis ou Multilaser.
 > O software pertence aos fabricantes. Use por sua conta e risco. Se a sua central ainda está na
 > garantia, procure a concessionária primeiro.
+
+## Por que isto é público e de graça
+
+Quando a minha central travou, fui atrás de conserto:
+
+- Nas **concessionárias**, queriam cobrar **R$ 500 só pelo pré-diagnóstico**, sem garantia nenhuma de
+  que teriam a solução.
+- Em **lojas de som**, o conserto saía por volta de **R$ 1.000**.
+- A imagem do sistema não existia em lugar nenhum da internet, e nem a Multilaser nem as concessionárias
+  tinham o arquivo.
+
+Depois de conseguir clonar uma central igual e consertar a minha, achei que isso **deveria ser público**,
+para ninguém mais ter que pagar caro (ou trocar a central) por um problema que se resolve com um cartão
+de memória e uns 30 minutos.
+
+### Apoie este projeto (Pix)
+
+Achou interessante ou este guia salvou a sua central? Foram horas descobrindo o formato do recovery,
+clonando uma central igual e testando o conserto, tudo publicado **de graça**. Quem quiser ajudar,
+ajuda no Pix, com qualquer valor:
+
+<img src="fotos/pix-qrcode.png" alt="QR code Pix para apoiar o projeto" width="260">
+
+**Chave Pix (aleatória):** `88f688c6-5d31-4bbb-b969-b8dcc42aa73a`
+
+**Pix copia e cola:**
+
+```
+00020126580014BR.GOV.BCB.PIX013688f688c6-5d31-4bbb-b969-b8dcc42aa73a5204000053039865802BR5919DOACAO ARGO CENTRAL6006BRASIL62070503***6304E501
+```
+
+No app do banco: **Pix > Ler QR code** ou **Pix copia e cola**, escolha o valor e confirme.
+O app mostra o nome do titular da chave antes de você confirmar. Obrigado! 🙏
 
 ---
 
@@ -335,33 +366,4 @@ binário `/sbin/recovery`:
 
 ## Apoie este projeto
 
-### Por que isto é público e de graça
-
-Quando a minha central travou, fui atrás de conserto:
-
-- Nas **concessionárias**, queriam cobrar **R$ 500 só pelo pré-diagnóstico**, sem garantia nenhuma de
-  que teriam a solução.
-- Em **lojas de som**, o conserto saía por volta de **R$ 1.000**.
-- A imagem do sistema não existia em lugar nenhum da internet, e nem a Multilaser nem as concessionárias
-  tinham o arquivo.
-
-Depois de conseguir clonar uma central igual e consertar a minha, achei que isso **deveria ser público**,
-para ninguém mais ter que pagar caro (ou trocar a central) por um problema que se resolve com um cartão
-de memória e 20 minutos.
-
-Achou interessante ou este guia salvou a sua central? Foram horas descobrindo o formato do recovery,
-clonando uma central igual e testando o conserto, tudo publicado **de graça**. Quem quiser ajudar,
-ajuda no Pix, com qualquer valor:
-
-<img src="fotos/pix-qrcode.png" alt="QR code Pix para apoiar o projeto" width="260">
-
-**Chave Pix (aleatória):** `88f688c6-5d31-4bbb-b969-b8dcc42aa73a`
-
-**Pix copia e cola:**
-
-```
-00020126580014BR.GOV.BCB.PIX013688f688c6-5d31-4bbb-b969-b8dcc42aa73a5204000053039865802BR5919DOACAO ARGO CENTRAL6006BRASIL62070503***6304E501
-```
-
-No app do banco: **Pix > Ler QR code** ou **Pix copia e cola**, escolha o valor e confirme.
-O app mostra o nome do titular da chave antes de você confirmar. Obrigado! 🙏
+O Pix para apoiar está [lá no começo do guia](#apoie-este-projeto-pix). Obrigado! 🙏
