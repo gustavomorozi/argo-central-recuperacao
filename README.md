@@ -215,6 +215,7 @@ pela opção **Update system**, lendo um arquivo do cartão de memória colocado
 | `Image file is damaged!!!` | Arquivo corrompido | Baixe de novo, confira o MD5, copie de novo |
 | `open /tmp/md5.txt error` / `END -2` | Usou "Auto Update" | Use **Update system** |
 | Volta ao recovery depois de gravar | O defeito não está na `system` | Procure assistência técnica |
+| A central liga, mas fica dando "o launcher parou" | Sistema ou configuração com problema | Tente primeiro o **Factory reset** do recovery (apaga as configurações da central). Se não resolver, regravar a `system` com este guia **pode** resolver, **por sua conta e risco** |
 
 Exemplo de `Image file isn't exist!!!` (arquivo não estava na raiz do cartão):
 
