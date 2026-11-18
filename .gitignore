@@ -1,0 +1,5 @@
+release/
+*.img
+*.ext4
+*.zip
+.env
