@@ -114,21 +114,30 @@ ou corrompido: o Android não consegue iniciar e o aparelho cai no recovery. No 
 guia, três bibliotecas do sistema tinham sido sobrescritas.
 
 A solução é **regravar a partição `system` com a de fábrica**. O próprio recovery da central faz isso,
-pela opção **Update system**, lendo um arquivo do cartão de memória. Este repositório fornece esse arquivo.
+pela opção **Update system**, lendo um arquivo do cartão de memória colocado na entrada do **módulo**
+(a caixa atrás da tela). Este repositório fornece esse arquivo.
 
 ---
 
 ## 3. O que você precisa
 
-- **Cartão micro SD de 4 a 32 GB** (o leitor da central é antigo; acima de 32 GB pode não ser reconhecido).
+- **Cartão micro SD de 4 a 32 GB** (vai na entrada do **módulo atrás da tela**; o leitor é antigo e acima de 32 GB pode não ser reconhecido).
 - Um **computador** para preparar o cartão.
 - O arquivo **`system.img.ext4.zip`** (357 MB) da página de
   [Releases](https://github.com/gustavomorozi/argo-central-recuperacao/releases/latest).
-- Uns **20 minutos** com o carro parado e ligado (ou com a bateria boa).
+- Ferramentas para **tirar a central do painel** (veja o vídeo abaixo).
+- Uns **30 minutos** com o carro parado e ligado (ou com a bateria boa).
 
-Não precisa abrir a central nem tirar do carro, se ela estiver ligando no recovery.
-Só é preciso tirar do painel para conferir a etiqueta, se você não souber a versão do software
-(veja o [vídeo de como tirar](https://www.youtube.com/watch?v=ZVi6xamriGQ), do canal Dicas da Hora som e acessórios).
+> **Onde fica a entrada do cartão:** a gravação é feita pelo **cartão de memória**, e a entrada de
+> cartão **não fica na tela**. Atrás da tela tem um **módulo** (a caixa de metal da central), e é nesse
+> módulo que fica a entrada para o cartão micro SD. Por isso é preciso **tirar a central do painel**
+> para chegar no módulo: veja o [vídeo de como tirar](https://www.youtube.com/watch?v=ZVi6xamriGQ),
+> do canal Dicas da Hora som e acessórios. Aproveite e confira a etiqueta do módulo
+> ([seção 1](#confira-a-etiqueta-atrás-da-central)).
+>
+> Com o cartão colocado no módulo, a central precisa estar **ligada no chicote do carro** para você usar
+> a tela do recovery. Se os cabos alcançarem, dá para fazer com ela apoiada fora do painel; se não,
+> encaixe a central de volta (com o cartão dentro) e faça o procedimento normalmente.
 
 ---
 
@@ -150,31 +159,34 @@ Só é preciso tirar do painel para conferir a etiqueta, se você não souber a 
 
 ### Parte B: na central
 
-1. Ligue o carro. A central vai abrir no recovery (o menu da [foto acima](#confira-a-tela-do-recovery)).
-2. **Coloque o cartão** na entrada de cartão de memória da central.
-3. Confira que o título do menu diz **"Update image from SD Card"**.
+1. **Tire a central do painel** para chegar no **módulo** atrás da tela
+   ([vídeo de como tirar](https://www.youtube.com/watch?v=ZVi6xamriGQ)).
+2. **Coloque o cartão** na entrada de cartão de memória **do módulo** (atrás da tela, não na tela) e
+   deixe a central ligada no chicote do carro (fora do painel, se os cabos alcançarem, ou encaixada de volta).
+3. Ligue o carro. A central vai abrir no recovery (o menu da [foto acima](#confira-a-tela-do-recovery)).
+4. Confira que o título do menu diz **"Update image from SD Card"**.
    Se estiver dizendo "USB Disk", toque em **Image from U Disk** para alternar de volta para o SD.
-4. Toque em **Update system** (é a **penúltima** opção, logo acima de "Auto Update").
-5. A central mostra `Update system ...` e a linha
+5. Toque em **Update system** (é a **penúltima** opção, logo acima de "Auto Update").
+6. A central mostra `Update system ...` e a linha
    `update_ext4_partition_from_file dev(/dev/block/system) offset(0x0) file(/ext_sdcard2/system.img.ext4)`.
    Ela está gravando:
 
    ![Gravando a system](fotos/06-gravando.jpg)
 
-   **Espere de 2 a 10 minutos.** Não desligue o carro, não tire o cartão e não toque na tela.
+   **Espere de 2 a 10 minutos.** Não desligue o carro, não tire o cartão do módulo e não toque na tela.
    É normal a tela ficar parada nessa linha.
-6. Quando terminar aparece **"Update system from /ext_sdcard2/. Update is successful."** e
+7. Quando terminar aparece **"Update system from /ext_sdcard2/. Update is successful."** e
    `update_ext4_partition_from_file succeeded!`:
 
    ![Update is successful](fotos/07-sucesso.jpg)
 
-7. Toque em **Reboot system**. Pode deixar o cartão dentro.
-8. O **primeiro boot demora mais** (de 3 a 10 minutos): aparece "Aguarde, sistema inicializando..."
+8. Toque em **Reboot system**. Pode deixar o cartão dentro.
+9. O **primeiro boot demora mais** (de 3 a 10 minutos): aparece "Aguarde, sistema inicializando..."
 
    ![Primeiro boot](fotos/08-primeiro-boot.jpg)
 
    e depois a tela inicial com "Inicializando, por favor aguarde...". Espere esse aviso sumir.
-9. Pronto. Depois pode tirar o cartão.
+10. Pronto. Depois tire o cartão do módulo e coloque a central de volta no painel.
 
 ---
 
