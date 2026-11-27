@@ -52,6 +52,7 @@ O app mostra o nome do titular da chave antes de você confirmar. Obrigado! 🙏
 2. [O problema que este guia resolve](#2-o-problema-que-este-guia-resolve)
 3. [O que você precisa](#3-o-que-você-precisa)
 4. [Passo a passo](#4-passo-a-passo)
+   - [Cenário 2 (em teste): pela tela "Atualização do sistema", com pendrive](#cenário-2-em-teste-pela-tela-atualização-do-sistema-com-pendrive)
 5. [O que NÃO fazer](#5-o-que-não-fazer)
 6. [Mensagens que podem aparecer](#6-mensagens-que-podem-aparecer)
 7. [O que essa imagem faz e não faz](#7-o-que-essa-imagem-faz-e-não-faz)
@@ -191,10 +192,17 @@ pela opção **Update system**, lendo um arquivo do cartão de memória colocado
 ### Como entrar no recovery
 
 - Se o Android da central estiver estragado, ela **já abre sozinha** no recovery ao ligar.
-- Se ela fica **presa na logo** ou o Android abre com erro (por exemplo, "o launcher parou"): com a
-  central ligando (na logo), **aperte e solte o botão de reset** que fica na **parte de baixo da central,
-  do lado direito**. Não precisa segurar. Ela reinicia e abre o menu "Android system recovery".
-  (Dica de membros do grupo Argo Clube no Facebook.)
+- Se o Android **ainda liga** (mesmo com erro, por exemplo "o launcher parou"), o jeito que funciona é
+  pelo **ADB por Wi-Fi**: com a central e um computador na mesma rede Wi-Fi, rode
+  `adb connect IP-DA-CENTRAL:5555` e depois `adb reboot recovery` (o IP aparece em Configurações > Wi-Fi).
+  Sem computador, dá para mandar o mesmo `reboot recovery` do celular com um app de ADB (por exemplo,
+  Bugjaeger), conectando no IP da central, porta 5555.
+- **O botão de reset não entra no recovery.** Testamos: ele só reinicia a central, apertando ou
+  segurando. Analisando o bootloader, a central até tem uma tecla de recovery na hora de ligar, mas ela
+  não está ligada a nenhum botão do painel do Argo (nem volume, nem reset, nem a tela).
+- A tela **Configurações > Atualização do sistema** também reinicia no recovery, mas só libera o botão
+  quando acha uma pasta `update` com `update.img` e `hwversion.txt` (versão maior que a atual) no cartão
+  ou pendrive. Sem esses arquivos ela mostra "Nenhuma atualização disponível".
 
 ### Parte B: na central
 
@@ -226,6 +234,45 @@ pela opção **Update system**, lendo um arquivo do cartão de memória colocado
 
    e depois a tela inicial com "Inicializando, por favor aguarde...". Espere esse aviso sumir.
 10. Pronto. Depois tire o cartão do módulo e coloque a central de volta no painel.
+
+### Cenário 2 (em teste): pela tela "Atualização do sistema", com pendrive
+
+> 🧪 **Ainda não testado numa central.** O formato foi tirado do próprio recovery da central (desmontado),
+> mas ninguém rodou isto até o fim ainda. Se você testar, conte nos [Issues](../../issues) como foi.
+> **Por sua conta e risco.** O cenário 1 (acima, pelo menu do recovery) é o que já está comprovado.
+
+Serve para quando a central **ainda liga o Android** (mesmo com erros, "o launcher parou", lenta,
+travando) e você quer regravar o sistema de fábrica **sem tirar a central do painel**: tudo por
+**pendrive**, pela tela de atualização da própria central.
+
+> ⚠️ **Apaga tudo**, como um padrão de fábrica: apps instalados, configurações, Wi-Fi salvo e
+> pareamentos Bluetooth (o recovery limpa `/data`, `/data4write` e `/cache` no fim). A licença do
+> sistema e o assistente de voz são preservados. O recovery da central **não** é regravado (é igual) e a
+> tabela de partições **não** é mexida (é igual).
+
+**Precisa de:** um pendrive (FAT32) e os dois arquivos da release
+[**Cenário 2: atualização pela tela**](../../releases/tag/v1.0.09R8-tela): `update.img` (580 MB) e
+`hwversion.txt`.
+
+1. No pendrive, crie uma pasta chamada **`update`** (minúsculas) na raiz e coloque os dois arquivos dentro:
+   ```
+   PENDRIVE/
+   └── update/
+       ├── update.img
+       └── hwversion.txt
+   ```
+   Confira o MD5 do `update.img`: **`0cdba044948cf63e02f331ff3afe0346`**.
+2. **Tire o cartão de memória do módulo** se tiver um com outra pasta `update` (ele tem prioridade).
+3. Ligue o carro, espete o pendrive na USB da central e espere ela reconhecer.
+4. Nas **Configurações** da central, abra a tela da versão do sistema (onde fica o botão **Atualização do sistema**). Agora tem que aparecer a versão disponível
+   **`Q9025FT-F01CJ2-Q02-V1.1.09R8-PT`** (é só um número para liberar o botão; o sistema gravado é o
+   **V1.0.09R8 de fábrica**, o mesmo do cenário 1).
+5. Toque em **Atualização do sistema** e confirme. **Não desligue o carro** até terminar.
+6. A central reinicia sozinha no recovery, grava o sistema (alguns minutos) e liga de novo. O primeiro boot
+   demora mais (3 a 10 minutos), como no cenário 1.
+7. Pronto: tire o pendrive. A central volta como saiu de fábrica; reinstale seus apps.
+
+**Se faltar energia no meio:** a central volta no recovery; dá para refazer pelo **cenário 1**.
 
 ---
 
