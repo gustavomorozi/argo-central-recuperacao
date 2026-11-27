@@ -244,9 +244,10 @@ pela opção **Update system**, lendo um arquivo do cartão de memória colocado
 > reconhecido por ela). Se a central não liga mais o Android, use o **cenário 1** (pelo menu do recovery,
 > com o cartão no módulo).
 
-Serve para quando a central **ainda liga o Android** (mesmo com erros, "o launcher parou", lenta,
-travando) e você quer regravar o sistema de fábrica **sem tirar a central do painel**: tudo por
-**pendrive**, pela tela de atualização da própria central.
+Serve para quando a central **ainda liga o Android** mas está com defeito: **"o Áudio parou"**, **vários
+apps parando** ("o launcher parou", "o rádio parou"...), lenta ou travando. Regrava o sistema de fábrica
+**sem tirar a central do painel**: tudo por **pendrive**, pela tela de atualização da própria central.
+Foi assim que resolvemos uma central que mostrava "o Áudio parou" e vários apps parando.
 
 > ⚠️ **Apaga tudo**, como um padrão de fábrica: apps instalados, configurações, Wi-Fi salvo e
 > pareamentos Bluetooth (o recovery limpa `/data`, `/data4write` e `/cache` no fim). A licença do
